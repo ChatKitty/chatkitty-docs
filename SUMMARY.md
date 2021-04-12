@@ -1,4 +1,4 @@
 # Table of contents
 
-* [index](README.md)
+* [ChatKitty Documentation](README.md)
 

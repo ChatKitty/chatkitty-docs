@@ -8,7 +8,7 @@ toc_footers:
     reserved</a>
 ---
 
-# index
+# ChatKitty Documentation
 
 ## Overview
 
@@ -75,9 +75,9 @@ ChatKitty provides a JavaScript client SDK to integrate chat into your front-end
 
 We've provided the following resources to help you implement chat with the ChatKitty JavaScript SDK.
 
-* [SDK Documentation](/javascript)
+* [SDK Documentation](https://github.com/ChatKitty/chatkitty-docs/tree/be543b923d479d8eb913c90142eb58295b7009fd/javascript/README.md)
 * [SDK TSDoc Reference Documentation](https://chatkitty.github.io/chatkitty-js/)
 * [Guides And Tutorials](https://www.chatkitty.com/guides/)
 
- The Platform API is not designed for client-side use.
+  The Platform API is not designed for client-side use.
 
