@@ -39,7 +39,7 @@ ChatKitty is available as an [npm package](https://www.npmjs.com/package/chatkit
 
 > Installing the JavaScript SDK using NPM
 
-```text
+```bash
 npm install chatkitty
 ```
 
