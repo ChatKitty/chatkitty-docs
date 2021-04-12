@@ -8,11 +8,9 @@ toc_footers:
     reserved</a>
 ---
 
-# ChatKitty Documentation
+# Introduction
 
-## Overview
-
-> Simple and convenient API
+## Simple and convenient API
 
 ```javascript
 kitty.startChatSession({
