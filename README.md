@@ -78,4 +78,7 @@ We've provided the following resources to help you implement chat with the ChatK
 * [Guides And Tutorials](https://www.chatkitty.com/guides/)
 
   The Platform API is not designed for client-side use.
+  
+  <iframe src="https://docs.chatkitty.com/platform/v1/" title="Platform API Documentation"></iframe>
+  
 
