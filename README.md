@@ -31,7 +31,7 @@ useEffect(() => {
 }, []);
 ```
 
-ChatKitty provides all the features you need to build modern chat out of the box including:
+ChatKitty is the first complete chat platform; bringing together everything that's required to build real-time chat into Web and mobile apps. ChatKitty provides all the features you need to build modern chat out of the box including:
 
 * **Direct messaging:** Provide secure and encrypted direct messaging to your users.
 * **Public and private group chat:** Your users can request to join or be invited to group chats.
@@ -46,7 +46,7 @@ ChatKitty provides all the features you need to build modern chat out of the box
 
 ![This example was created with ChatKitty.](.gitbook/assets/screenshot-chatkitty-demo-app.png)
 
-ChatKitty is the first complete chat platform; bringing together everything that's required to build real-time chat into Web and mobile apps. With ChatKitty you can build real-time chat with or without a back-end. Getting started with ChatKitty is easy and you get:
+With ChatKitty you can build real-time chat with or without a back-end. Getting started with ChatKitty is easy and you get:
 
 **Reliability**
 
