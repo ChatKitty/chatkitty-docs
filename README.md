@@ -6,66 +6,65 @@ toc_footers:
   - >-
     <a href='https://www.chatkitty.com'>&copy; ChatKitty 2020. All rights
     reserved</a>
+description: >-
+  Build an in-app chat experience for your users with all the modern messaging
+  features that your users expect using the ChatKitty Chat Developer Platform.
 ---
 
 # Introduction
 
-## Simple and convenient API
-
-```javascript
-kitty.startChatSession({
-  channel: channel,
-  onReceivedMessage: (message) => {
-    showMessage(message);
-  },
-});
-```
-
-ChatKitty provides a client JavaScript SDK and Platform API for you to interact with your ChatKitty application.
-
-_The example above was created with ChatKitty. Check it out at_ [_demo.chatkitty.com_](https://demo.chatkitty.com/)_._
-
-[The JavaScript client library](https://docs.chatkitty.com/javascript/) provides an asynchronous WebSocket based real-time messaging interface to ChatKitty's user-side functionality. [The Platform API](https://docs.chatkitty.com/platform/) provides a RESTful HTTP interface for you to manage and control your application server-side.
-
-### Getting started
-
-#### Getting an API key
-
-You'll need [a ChatKitty account](https://dashboard.chatkitty.com/authorization/register) before you can begin building chat with ChatKitty. After creating your account, create a ChatKitty application using the dashboard and copy its API key from your application's setting page.
-
-#### Installation
-
-ChatKitty is available as an [npm package](https://www.npmjs.com/package/chatkitty). Install the ChatKitty client SDK into front-end application using NPM or Yarn.
-
-> Installing the JavaScript SDK using NPM
-
-```bash
-npm install chatkitty
-```
-
-#### Initialize the SDK with your API key
-
-With your API key you can initialize a new instance of the **ChatKitty client**.
-
-> Initialize ChatKitty SDK client
+## Simple and convenient Chat API and real-time messaging SDK
 
 ```javascript
 const kitty = ChatKitty.getInstance(CHATKITTY_API_KEY);
+
+useEffect(() => {
+  // start real-time chat session
+  let result = kitty.startChatSession({
+    channel: channel,
+    onReceivedMessage: (message) => {
+      showMessage(message); // update your UI as new chat events occur
+    },
+  });
+
+  return result.session.end;
+}, []);
 ```
 
-#### Starting a user session
+ChatKitty is the first complete chat platform; bringing together everything that's required to build real-time chat into Web and mobile apps. With ChatKitty you can build real-time chat with or without a back-end. Getting started with ChatKitty is easy and you get:
 
-To make calls to ChatKitty as a user, a user session must be started.
+**Reliability**
 
-You can start a user session using the unique username of a user and optional authentication parameters to secure the user session.
+Your user chat sessions remain stable even in the presence of proxies, load balancers and personal firewalls. ChatKitty provides auto reconnection support and offline notifications so your users stay in the loop.
 
-> Starting a user session as a guest user without authParams
+**Low Latency**
 
-```javascript
-await kitty.startSession({
-  username: email,
-});
-```
+With response times below 100ms, ChatKitty makes sure your users have a smooth and immersive chat experience.
+
+**Cross-platform support**
+
+You can use ChatKitty across every major browser and device platform. ChatKitty also works great with multi-platform frameworks like React-Native and Ionic.
+
+![This example was created with ChatKitty.](.gitbook/assets/screenshot-chatkitty-demo-app.png)
+
+## Features
+
+ChatKitty provides all the features you need to build modern chat out of the box including:
+
+* **Direct messaging:** Provide secure and encrypted direct messaging to your users.
+* **Public and private group chat:** Your users can request to join or be invited to group chats.
+* **Message threads:** Keep conversations organized with message threads.
+* **Push notifications:** Make sure your users always see their messages.
+* **File attachments:** Attach images, videos, or any other type of files.
+* **Typing indicators:** Let your users know when others are typing.
+* **Reactions:** Users can react to messages with emojis and GIFs.
+* **Presence indicators:** Let your users know who's online.
+* **Delivery and read receipts:** See when messages get delivered and read.
+* **Link preview generation:** Messages with links get rich media previews.
+
+ChatKitty provides a client JavaScript SDK and Platform API for you to interact with your ChatKitty application.
+
+[The JavaScript client library](https://docs.chatkitty.com/javascript/) provides an asynchronous real-time messaging interface to ChatKitty's user-side functionality. [The Platform API](https://docs.chatkitty.com/platform/) provides a RESTful HTTP interface for you to manage and control your application server-side.
 
 ## Client SDK
 
@@ -77,8 +76,13 @@ We've provided the following resources to help you implement chat with the ChatK
 * [SDK TSDoc Reference Documentation](https://chatkitty.github.io/chatkitty-js/)
 * [Guides And Tutorials](https://www.chatkitty.com/guides/)
 
-  The Platform API is not designed for client-side use.
-  
-  <iframe src="https://docs.chatkitty.com/platform/v1/" title="Platform API Documentation"></iframe>
-  
+## Platform API
+
+The Platform API provides a RESTful interface for administrators and server-side back-ends to manage their ChatKitty applications.
+
+We've provided the following resources to help you manage your application with the ChatKitty Platform API.
+
+* [SDK Documentation](https://github.com/ChatKitty/chatkitty-docs/tree/be543b923d479d8eb913c90142eb58295b7009fd/javascript/README.md)
+* [Open API Reference Documentation And API Explorer](https://docs.chatkitty.com/platform/v1/)
+* [HAL API Browser](https://api.chatkitty.com/v1/explorer/index.html)
 
