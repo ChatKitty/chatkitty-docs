@@ -31,6 +31,21 @@ useEffect(() => {
 }, []);
 ```
 
+ChatKitty provides all the features you need to build modern chat out of the box including:
+
+* **Direct messaging:** Provide secure and encrypted direct messaging to your users.
+* **Public and private group chat:** Your users can request to join or be invited to group chats.
+* **Message threads:** Keep conversations organized with message threads.
+* **Push notifications:** Make sure your users always see their messages.
+* **File attachments:** Attach images, videos, or any other type of files.
+* **Typing indicators:** Let your users know when others are typing.
+* **Reactions:** Users can react to messages with emojis and GIFs.
+* **Presence indicators:** Let your users know who's online.
+* **Delivery and read receipts:** See when messages get delivered and read.
+* **Link preview generation:** Messages with links get rich media previews.
+
+![This example was created with ChatKitty.](.gitbook/assets/screenshot-chatkitty-demo-app.png)
+
 ChatKitty is the first complete chat platform; bringing together everything that's required to build real-time chat into Web and mobile apps. With ChatKitty you can build real-time chat with or without a back-end. Getting started with ChatKitty is easy and you get:
 
 **Reliability**
@@ -44,23 +59,6 @@ With response times below 100ms, ChatKitty makes sure your users have a smooth a
 **Cross-platform support**
 
 You can use ChatKitty across every major browser and device platform. ChatKitty also works great with multi-platform frameworks like React-Native and Ionic.
-
-![This example was created with ChatKitty.](.gitbook/assets/screenshot-chatkitty-demo-app.png)
-
-## Features
-
-ChatKitty provides all the features you need to build modern chat out of the box including:
-
-* **Direct messaging:** Provide secure and encrypted direct messaging to your users.
-* **Public and private group chat:** Your users can request to join or be invited to group chats.
-* **Message threads:** Keep conversations organized with message threads.
-* **Push notifications:** Make sure your users always see their messages.
-* **File attachments:** Attach images, videos, or any other type of files.
-* **Typing indicators:** Let your users know when others are typing.
-* **Reactions:** Users can react to messages with emojis and GIFs.
-* **Presence indicators:** Let your users know who's online.
-* **Delivery and read receipts:** See when messages get delivered and read.
-* **Link preview generation:** Messages with links get rich media previews.
 
 ChatKitty provides a client JavaScript SDK and Platform API for you to interact with your ChatKitty application.
 
