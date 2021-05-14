@@ -2,7 +2,7 @@
 
 ## Creating a ChatKitty project
 
-You'll need [a ChatKitty account](https://dashboard.chatkitty.com/authorization/register) before you can begin building chat with ChatKitty.   
+You'll need a **ChatKitty account** before you can begin building chat with ChatKitty.   
   
 You can [create a free ChatKitty account here](https://dashboard.chatkitty.com/authorization/register).  
   
