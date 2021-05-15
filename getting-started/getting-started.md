@@ -1,4 +1,10 @@
-# Getting Started
+---
+description: >-
+  The basics. Create a ChatKitty project, then install and configure the
+  ChatKitty client.
+---
+
+# Setting up a ChatKitty project
 
 ## Creating a ChatKitty project
 
