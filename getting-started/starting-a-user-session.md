@@ -10,7 +10,7 @@ ChatKitty lets you integrate your application authentication logic to secure use
 
 ## Authenticating a user session
 
-You can start an authenticated user session by passing a unique **username** and **auth params** to your `ChatKitty` client `startSession()` method. A username is a string that uniquely identifies a user within your application. You define a username when **creating a user** by its `name` property.
+You can start an authenticated user session by passing a unique **username** and **auth params** to your `ChatKitty` client `startSession()` method. A username is a string that uniquely identifies a user within your application. You define a username when **creating a user** as its `name` property.
 
 {% hint style="info" %}
 We recommend you use uniquely hashed email addresses or phone numbers as usernames.
