@@ -7,8 +7,8 @@ toc_footers:
     <a href='https://www.chatkitty.com'>&copy; ChatKitty 2020. All rights
     reserved</a>
 description: >-
-  Build an in-app chat experience for your users with all the modern messaging
-  features that your users expect using the ChatKitty Chat Developer Platform.
+  Build an in-app chat experience with all the modern messaging features your
+  users expect.
 ---
 
 # Introduction
@@ -54,7 +54,7 @@ Your user chat sessions remain stable even in the presence of proxies, load bala
 
 **Low Latency**
 
-With response times below 100ms, ChatKitty makes sure your users have a smooth and immersive chat experience.
+With response times below 150ms, ChatKitty makes sure your users have a smooth and immersive chat experience.
 
 **Cross-platform support**
 
