@@ -88,3 +88,7 @@ if (result.failed) {
 }
 ```
 
+{% hint style="info" %}
+All handler methods are optional. You only needed to register handlers for chat events your application cares about.
+{% endhint %}
+
