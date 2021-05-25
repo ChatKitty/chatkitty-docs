@@ -6,6 +6,18 @@ description: >-
 
 # JavaScript Real-Time Messaging Quick Start
 
+## Installing the ChatKitty JS SDK
+
+To use the ChatKitty JavaScript Chat SDK, you'll need to add the [ChatKitty JavaScript SDK](https://www.npmjs.com/package/chatkitty) NPM package to your JavaScript front-end project:
+
+{% tabs %}
+{% tab title="NPM" %}
+```bash
+npm install chatkitty
+```
+{% endtab %}
+{% endtabs %}
+
 ## Starting a guest user session
 
 You must create a [**user session**](../concepts/user-sessions.md) ****before a user can begin chatting with other users using ChatKitty. A user session represents a secure bi-directional connection with ChatKitty servers allowing users to send and receive messages in real-time. 
