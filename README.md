@@ -1,16 +1,3 @@
----
-title: ChatKitty API Documentation
-language_tabs:
-  - javascript
-toc_footers:
-  - >-
-    <a href='https://www.chatkitty.com'>&copy; ChatKitty 2020. All rights
-    reserved</a>
-description: >-
-  Build an in-app chat experience with all the modern messaging features your
-  users expect.
----
-
 # Introduction
 
 ## Simple and convenient Chat API and real-time messaging SDK
