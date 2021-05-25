@@ -12,15 +12,16 @@
 * [User Sessions](concepts/user-sessions.md)
 * [Users](concepts/users.md)
 
-## Guides
+## JavaScript SDK
 
-* [Integrating Firebase Authentication](guides/integrating-firebase-authentication.md)
+* [Reference Documentation](https://chatkitty.github.io/chatkitty-js/)
 
 ## Platform API
 
 * [Overview](platform-api/overview.md)
-
----
-
 * [OpenAPI Specification \(OAS\)](https://swagger.chatkitty.com/)
+
+## Guides
+
+* [Integrating Firebase Authentication](guides/integrating-firebase-authentication.md)
 

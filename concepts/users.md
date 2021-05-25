@@ -14,5 +14,7 @@ A user represents an end-user using your application. Users can join channels, c
 | name | string | The unique name of the user. | ✔ |
 | displayName | string | Human readable name of this user. Shown to other users. | ✔ |
 
+{% page-ref page="users.md" %}
+
 
 
