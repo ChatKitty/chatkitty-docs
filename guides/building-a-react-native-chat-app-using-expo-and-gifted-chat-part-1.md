@@ -1,36 +1,3 @@
----
-excerpt: >-
-  In this tutorial series, I'll be showing you how to build a functional and
-  secure chat app using 
-
-  the latest React Native libraries, the Expo framework, and Firebase, powered
-  by the ChatKitty platform. 
-
-  Part 1 covers using Firebase Authentication and ChatKitty Chat Functions to
-  securely implement user login.
-layout: post
-author: data/authors/aaron-nwabuoku.yaml
-date: '2020-10-25T00:00:00.000Z'
-thumb_image: >-
-  images/blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/thumb.png
-subtitle: >-
-  In [this tutorial
-  series](./blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/)
-
-  , I'll be showing you how to build a functional and secure chat app using
-
-  the latest React Native libraries, including Gifted Chat and the Expo
-  framework, and Firebase, powered by the ChatKitty platform.
-title: Building a Chat App with React Native and Firebase (Part 1)
-tags:
-  - guide
-image: >-
-  images/blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/feature.png
-description: >-
-  Learn how to build a React Native chat app using the Expo framework powered by
-  ChatKitty
----
-
 # Building a React Native Chat App using Expo and Gifted Chat \(Part 1\)
 
 After reading this article, you will be able to:
