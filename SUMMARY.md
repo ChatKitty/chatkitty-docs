@@ -22,5 +22,5 @@
 
 ---
 
-* [OpenAPI Specification \(OAS\)](http://chatkitty-docs.s3-website-us-east-1.amazonaws.com/)
+* [OpenAPI Specification \(OAS\)](https://swagger.chatkitty.com/)
 
