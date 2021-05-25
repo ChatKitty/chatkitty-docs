@@ -10,6 +10,7 @@
 ## Concepts
 
 * [User Sessions](concepts/user-sessions.md)
+* [Users](concepts/users.md)
 
 ## Guides
 
@@ -21,5 +22,5 @@
 
 ---
 
-* [OpenAPI Specification \(OAS\)](https://docs.chatkitty.com/platform/v1/)
+* [OpenAPI Specification \(OAS\)](http://chatkitty-docs.s3-website-us-east-1.amazonaws.com/)
 
