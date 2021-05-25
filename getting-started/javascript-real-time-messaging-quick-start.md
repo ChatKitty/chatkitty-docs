@@ -24,6 +24,18 @@ yarn add chatkitty
 {% endtab %}
 {% endtabs %}
 
+## Initializing the ChatKitty SDK with your API key
+
+With your API key from the[ ChatKitty dashboard](https://dashboard.chatkitty.com/authorization/register), you can initialize a new instance of the **ChatKitty client:**
+
+```javascript
+import ChatKitty from 'chatkitty';
+
+export const kitty = ChatKitty.getInstance('YOUR CHATKITTY API KEY HERE');
+```
+
+With that, you can now use the ChatKitty SDK to begin building real-time chat features into your application.
+
 ## Starting a guest user session
 
 You must create a [**user session**](../concepts/user-sessions.md) ****before a user can begin chatting with other users using ChatKitty. A user session represents a secure bi-directional connection with ChatKitty servers allowing users to send and receive messages in real-time. 
