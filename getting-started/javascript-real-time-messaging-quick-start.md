@@ -117,7 +117,7 @@ if (result.failed) {
 
 ### Receiving channel messages
 
-ChatKitty lets you register a number of handler methods when starting a chat session. Perhaps most importantly, the [`onReceivedMessage()`](https://chatkitty.github.io/chatkitty-js/classes/chat_session.startchatsessionrequest.html#onreceivedmessage) handler method. This method is called in real-time whenever a new message is sent by a channel member. Typically, this is where you included code to update your UI with the new message.
+ChatKitty lets you register a number of handler methods when starting a chat session. Perhaps most important is the [`onReceivedMessage()`](https://chatkitty.github.io/chatkitty-js/classes/chat_session.startchatsessionrequest.html#onreceivedmessage) handler method. This method is called in real-time whenever a new message is sent by a channel member. Typically, this is where you included code to update your UI with the new message.
 
 {% hint style="info" %}
 All handler methods are optional. You only needed to register handlers for chat events your application cares about.
