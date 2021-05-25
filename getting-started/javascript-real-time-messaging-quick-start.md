@@ -97,6 +97,10 @@ if (result.failed) {
 }
 ```
 
+### Receiving channel messages
+
+ChatKitty lets you register a number of handler methods when starting a chat session. Perhaps most importantly, the [`onReceivedMessage()`](https://chatkitty.github.io/chatkitty-js/classes/chat_session.startchatsessionrequest.html#onreceivedmessage) handler method. This method is called in real-time whenever a new message is sent by a channel member. Typically, this is where you included code to update your UI with the new message.
+
 {% hint style="info" %}
 All handler methods are optional. You only needed to register handlers for chat events your application cares about.
 {% endhint %}
@@ -107,7 +111,7 @@ To send a message to a channel with an **active chat session**, use [`sendMessag
 
 ### Sending a text message
 
-To send a text message pass a string `body` to `sendMessage()`.
+To send a **text message** pass a string `body` to `sendMessage()`.
 
 ```javascript
 const result = await kitty.sendMessage({
@@ -126,7 +130,7 @@ if (result.failed) {
 
 ### Sending a file message
 
-To send a file attachment pass a [JavaScript file](https://developer.mozilla.org/en-US/docs/Web/API/File) or [`CreateChatKittyFileProperties`](https://chatkitty.github.io/chatkitty-js/modules/file.html#createchatkittyfileproperties) as `file` to `sendMessage()`. Optionally, you can pass a [`ChatKittyUploadProgressListener`](https://chatkitty.github.io/chatkitty-js/interfaces/file.chatkittyuploadprogresslistener.html) to track file upload progress.
+To send a **file message** pass a [JavaScript file](https://developer.mozilla.org/en-US/docs/Web/API/File) or [`CreateChatKittyFileProperties`](https://chatkitty.github.io/chatkitty-js/modules/file.html#createchatkittyfileproperties) as `file` to `sendMessage()`. Optionally, you can pass a [`ChatKittyUploadProgressListener`](https://chatkitty.github.io/chatkitty-js/interfaces/file.chatkittyuploadprogresslistener.html) to track file upload progress.
 
 ```javascript
 const result = await kitty.sendMessage({
@@ -149,6 +153,24 @@ const result = await kitty.sendMessage({
 
 if (result.succeeded) {
   const message = result.message; // Handle message
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+## Getting channel message history
+
+To fetch previous messages sent in a channel, use the [`getMessages()`](https://chatkitty.github.io/chatkitty-js/classes/chatkitty.chatkitty-1.html#getmessages) method.
+
+```javascript
+const result = await kitty.getMessages({
+  channel: channel,
+});
+
+if (result.succeeded) {
+  const messages = result.paginator.items; // Handle messages
 }
 
 if (result.failed) {
