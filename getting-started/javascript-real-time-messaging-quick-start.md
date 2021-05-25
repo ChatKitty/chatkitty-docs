@@ -16,6 +16,12 @@ To use the ChatKitty JavaScript Chat SDK, you'll need to add the [ChatKitty Java
 npm install chatkitty
 ```
 {% endtab %}
+
+{% tab title="YARN" %}
+```
+yarn add chatkitty
+```
+{% endtab %}
 {% endtabs %}
 
 ## Starting a guest user session
