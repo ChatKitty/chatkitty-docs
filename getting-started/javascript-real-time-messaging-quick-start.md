@@ -17,7 +17,7 @@ npm install chatkitty
 ```
 {% endtab %}
 
-{% tab title="YARN" %}
+{% tab title="Yarn" %}
 ```
 yarn add chatkitty
 ```
