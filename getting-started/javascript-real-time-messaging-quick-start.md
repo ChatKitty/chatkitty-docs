@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create a bi-directional connection with ChatKitty to start sending and
-  receiving real-time messages.
+  Integrate real-time chat into your React Native or Web application with the
+  ChatKitty JavaScript SDK.
 ---
 
 # JavaScript Real-Time Messaging Quick Start
