@@ -34,7 +34,13 @@ Private channels are for topics that should not be open to all members. Users mu
 
 ### Direct Channels
 
- Direct channels let users have private conversations with **up to 9** other users. New users cannot be added to a direct channel and there can only exist one direct channel between a set of users.
+Direct channels let users have private conversations with **up to 9** other users. New users cannot be added to a direct channel and there can only exist one direct channel between a set of users.
+
+#### Additional Properties
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| members | User \[ \] | An array of member users of this channel | ✔ |
 
 
 
