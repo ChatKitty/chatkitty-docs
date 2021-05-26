@@ -44,7 +44,7 @@ Before you learn about **authenticating users** with ChatKitty, you can create a
 
 ```javascript
 const result = await kitty.startSession({
-  username: 'jane.doe@chatkitty.com'
+  username: 'jane@chatkitty.com'
 });
 
 if (result.succeeded) {
@@ -67,7 +67,7 @@ With a ChatKitty connection established, you can create a **direct channel** to 
 ```javascript
 const result = await kitty.createChannel({
   type: 'DIRECT',
-  members: [{ username: 'john.doe@chatkitty.com' }],
+  members: [{ username: 'john@chatkitty.com' }],
 });
 
 if (result.succeeded) {

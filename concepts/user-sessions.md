@@ -36,7 +36,7 @@ By default, your application has the **guest user** feature enabled, allowing yo
 
 ```javascript
 const result = await kitty.startSession({
-  username: 'jane.doe@chatkitty.com'
+  username: 'jane@chatkitty.com'
 });
 
 if (result.succeeded) {
@@ -65,7 +65,7 @@ You can start an authenticated user session using a unique **username** and **au
 
 ```javascript
 const result = await kitty.startSession({
-  username: 'jane.doe@chatkitty.com',
+  username: 'jane@chatkitty.com',
   authParams: {
     // parameters you defined to securely pass to authentication chat function
     password: password,

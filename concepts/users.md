@@ -53,7 +53,7 @@ await kitty.updateCurrentUser((user) => {
   // Perform updates
   user.properties = {
     ...user.properties,
-    'new-property': newPropertyValue,
+    'favorite-number': 42,
   };
 
   return user; // Return updated user
