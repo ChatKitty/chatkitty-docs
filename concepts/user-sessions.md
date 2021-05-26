@@ -85,3 +85,10 @@ End a user session to close its concurrent connection and free up resources used
 kitty.endSession();
 ```
 
+## See also
+
+* [JavaScript SDK Reference Documentation](https://chatkitty.github.io/chatkitty-js/modules/user_session.html)
+* [Platform API OpenAPI Specification](https://swagger.chatkitty.com/#/user_session)
+
+
+

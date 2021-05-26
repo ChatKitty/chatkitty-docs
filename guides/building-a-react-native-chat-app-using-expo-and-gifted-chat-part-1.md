@@ -7,7 +7,7 @@ After reading this article, you will be able to:
 3. Create a ChatKitty project and connect to ChatKitty to provide real-time chat functionality
 4. Use Firebase Authentication and ChatKitty Chat Functions to securely implement user login
 
-If you want to skip ahead, the next article in this series covers [**building a group chat screen**](blog/posts/building-a-chat-app-with-react-native-and-gifted-chat-part-2/).
+If you want to skip ahead, the next article in this series covers [**building a group chat screen**](https://github.com/ChatKitty/chatkitty-docs/tree/a0eb9de3d6452aef89f93d5c9293d74251924723/guides/blog/posts/building-a-chat-app-with-react-native-and-gifted-chat-part-2/README.md).
 
 **You can find the complete source code for this project inside** [**this GitHub repository**](https://github.com/ChatKitty/chatkitty-example-react-native/tree/tutorial/part-1)**.**
 
@@ -189,9 +189,9 @@ Now we have our reusable form components, we can create a Login screen for users
 
 ## Creating a login screen
 
-The first screen we'll be creating is the login screen. We'll ask an existing user for their email and password to authenticate and provide a link to a future sign-up form for new users to register with our app.   
-  
- The login screen should look like this after you're done:
+The first screen we'll be creating is the login screen. We'll ask an existing user for their email and password to authenticate and provide a link to a future sign-up form for new users to register with our app.
+
+The login screen should look like this after you're done:
 
 ![TODO: Login screen](https://www.chatkitty.com/images/blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/screenshot-login-screen.png)
 
@@ -888,7 +888,7 @@ Go to the "Runtime" tab and add a new dependency to the [Firebase JavaScript SDK
 
 ![ChatKitty runtime add firebase](https://www.chatkitty.com/images/blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/screenshot-chatkitty-runtime-add-firebase.png)
 
- _Remember to click the "Save" icon to confirm your chat runtime dependencies changes._
+_Remember to click the "Save" icon to confirm your chat runtime dependencies changes._
 
 Before you can use Firebase within your chat functions, the Firebase SDK needs to be initialized. You can add arbitrary code that runs before each chat function using a chat runtime **initialization script**.  
 Let's add an initialization script to initialize the Firebase SDK.
@@ -908,7 +908,7 @@ if (!firebase.apps.length) {
 }
 ```
 
- _Replacing `firebaseConfig` with the value from your Firebase SDK config snippet._
+_Replacing `firebaseConfig` with the value from your Firebase SDK config snippet._
 
 Now we're ready to define a chat function to check if a user's email and password exists and matches what we expect from Firebase, whenever a user tries to begin a new chat session.
 
@@ -950,7 +950,7 @@ async function handleEvent(
 
 ![ChatKitty chat function user attempted start session](https://www.chatkitty.com/images/blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/screenshot-chatkitty-chat-function-user-attempted-start-session.png)
 
- _Remember to click the "Save" icon to confirm your chat function changes._
+_Remember to click the "Save" icon to confirm your chat function changes._
 
 Now, whenever a user tries to log in, ChatKitty checks if a user with their login credentials exists from your Firebase backend, and if so, begins a chat session. With that, we're ready to connect your Expo React Native app to the ChatKitty JavaScript Chat SDK.
 
