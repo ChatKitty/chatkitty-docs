@@ -14,9 +14,11 @@ After a user **joins** a channel, the user becomes a **channel member**. ChatKit
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| id | number | 64-bit integer identifier associated with this channel. | ✔ |
-| name | string | The unique name of the user. | ✔ |
-| displayName | string | Human readable name of this user. Shown to other users. | ✔ |
+| id | number | 64-bit integer identifier associated with this channel | ✔ |
+| type | string | The type of this channel. `PUBLIC`, `PRIVATE`, or `DIRECT` | ✔ |
+| name | string | The unique name of this channel | ✔ |
+| creator | User | The user who created this channel. Absent if the channel was created with the Platform API | - |
+| properties | object | Custom data associated with this channel | ✔ |
 
 ## Channel types
 

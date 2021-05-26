@@ -14,7 +14,7 @@ ChatKitty lets you integrate your application authentication logic to secure use
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| user | CurrentUser | The user this session was started for. | ✔ |
+| user | CurrentUser | The user this session was started for | ✔ |
 
 ## Starting a user session
 
@@ -32,7 +32,7 @@ By default, your application has the **guest user** feature enabled, allowing yo
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| username | string | The unique name of the user starting this guest session. | ✔ |
+| username | string | The unique name of the user starting this guest session | ✔ |
 
 ```javascript
 const result = await kitty.startSession({
@@ -60,7 +60,7 @@ You can start an authenticated user session using a unique **username** and **au
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| username | string | The unique name of the user starting this authenticated session. | ✔ |
+| username | string | The unique name of the user starting this authenticated session | ✔ |
 | authParams | object | Application-defined parameters containing user credentials | ✔ |
 
 ```javascript
