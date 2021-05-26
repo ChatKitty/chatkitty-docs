@@ -24,6 +24,11 @@
 
 ## Guides
 
-* [Building a React Native Chat App using Expo and Gifted Chat \(Part 1\)](guides/building-a-react-native-chat-app-using-expo-and-gifted-chat-part-1.md)
-* [Integrating Firebase Authentication](guides/integrating-firebase-authentication.md)
+* [Building an Expo React Native Chat App with Gifted Chat \(Part 1\)](https://www.chatkitty.com/blog/posts/building-a-chat-app-with-react-native-and-firebase-part-1/)
+
+---
+
+* [Building an Expo React Native Chat App with Gifted Chat \(Part 2\)](https://www.chatkitty.com/blog/posts/building-a-chat-app-with-react-native-and-gifted-chat-part-2/)
+* [Building an Expo React Native Chat App with Gifted Chat \(Part 3\)](https://www.chatkitty.com/blog/posts/building-a-chat-app-with-react-native-and-expo-part-3/)
+* [Building an Expo React Native Chat App with Gifted Chat \(Part 4\)](https://www.chatkitty.com/blog/posts/building-a-chat-app-with-react-native-and-gifted-chat-part-4/)
 
