@@ -13,6 +13,8 @@ A user represents an end-user using your application. Users can join channels, c
 | id | number | 64-bit integer identifier associated with this user. | ✔ |
 | name | string | The unique name of the user. | ✔ |
 | displayName | string | Human readable name of this user. Shown to other users. | ✔ |
+| displayPictureUrl | string | URI for this user's display picture | ✔ |
+|  |  |  |  |
 
 ## Current User
 

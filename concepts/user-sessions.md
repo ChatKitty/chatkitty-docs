@@ -20,7 +20,7 @@ We recommend you use hashed email addresses or phone numbers for usernames.
 
 ### Starting a guest user session
 
-By default, your application has the **guest user** feature enabled, allowing you to start a user session with only your users' unique username.
+By default, your application has the **guest user** feature enabled, allowing you to start a user session with only your users' unique username. Starting a guest user session creates a new guest user if a user with the requested username does not exist.
 
 #### Parameters
 

@@ -11,6 +11,7 @@
 
 * [User Sessions](concepts/user-sessions.md)
 * [Users](concepts/users.md)
+* [Channels](concepts/channels.md)
 
 ## JavaScript SDK
 
