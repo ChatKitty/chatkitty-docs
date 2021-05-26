@@ -44,7 +44,7 @@ Private channels are for topics that should not be open to all members. Users mu
 
 ## Creating a channel
 
-Create a new channel of channel type \(`DIRECT`, `PUBLIC`, or `PRIVATE`\) with a unique name for public and private channels,  and member references for direct channels. A user is automatically a member of a channel they created.
+Create a new channel of channel type \(`DIRECT`, `PUBLIC`, or `PRIVATE`\) with a unique name for public and private channels and member references for direct channels. A user is automatically a member of a channel they created.
 
 ### Creating a direct channel
 
@@ -145,6 +145,63 @@ if (result.succeeded) {
 
 if (result.failed) {
   const error = result.error; // Handle error
+}
+```
+
+## Joining a public channel
+
+```javascript
+const result = await kitty.joinChannel({ channel });
+
+if (result.succeeded) {
+  const channel = result.channel; // Handle channel
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+### Observing user joined channel
+
+When the current user joins a channel or is added to a channel by another user or through the Platform API, registered channel observers are notified.
+
+```javascript
+const unsubscribe = kitty.onJoinedChannel((channel) => {
+  // handle channel
+});
+
+// call when you're no longer interested in updates
+unsubscribe();
+```
+
+## Reading a channel
+
+Read a channel to automatically **read** all channel messages.
+
+```javascript
+const result = await kitty.readChannel({ channel });
+
+if (result.succeeded) {
+  const channel = result.channel; // Handle channel
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+### Checking if a channel is unread
+
+A channel is unread if it has any unread messages by the current user.
+
+```javascript
+const result = await kitty.getChannelUnread({
+  channel: channel,
+});
+
+if (result.succeeded) {
+  const unread = result.unread; // Handle if unread 
 }
 ```
 

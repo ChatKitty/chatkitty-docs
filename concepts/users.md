@@ -36,7 +36,7 @@ const unsubscribe = kitty.onCurrentUserChanged((user) => {
   // handle new current user or current user changes
 });
 
-// call unsubscribe function when you're no longer interested in updates
+// call when you're no longer interested in updates
 unsubscribe();
 ```
 
