@@ -48,7 +48,7 @@ Guest user sessions are **only** appropriate when your application in developmen
 
 ### Starting an authenticated user session
 
-You can start an authenticated user session by passing a unique **username** and **auth params** to your ChatKitty client start session method. A username is a string that uniquely identifies a user within your application. You define a username when **creating a user** as its name property. Auth params are arbitrary properties passed to an **authentication chat function** used to check if a user is allowed to start a user session with their credentials.
+You can start an authenticated user session using a unique **username** and **auth params**. A username is a string that uniquely identifies a user within your application. You define a username when **creating a user** as its name property. Auth params are arbitrary properties passed to an **authentication chat function** used to check if a user is allowed to start a user session with their credentials.
 
 #### Parameters
 

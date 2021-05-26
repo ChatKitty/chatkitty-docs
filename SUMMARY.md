@@ -14,7 +14,7 @@
 
 ## JavaScript SDK
 
-* [Reference Documentation](https://chatkitty.github.io/chatkitty-js/)
+* [Reference Documentation](https://chatkitty.github.io/chatkitty-js/classes/chatkitty.chatkitty-1.html)
 
 ## Platform API
 
