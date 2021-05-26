@@ -20,6 +20,7 @@
 ## Platform API
 
 * [Overview](platform-api/overview.md)
+* [Chat Functions](platform-api/chat-functions.md)
 * [OpenAPI Specification \(OAS\)](https://swagger.chatkitty.com/)
 
 ## Guides
