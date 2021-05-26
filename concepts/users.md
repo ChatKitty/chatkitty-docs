@@ -43,7 +43,7 @@ The observer function passed to onCurrentUserChanged is called with the current 
 
 ### Updating the current user
 
-Update the current user by passing a function taking the current user and returning a user with the changes to be applied to the ChatKitty client.
+Update the current user by passing a function taking the current user and returning a user with the changes to be applied to your ChatKitty client instance.
 
 ```javascript
 await kitty.updateCurrentUser((user) => {
