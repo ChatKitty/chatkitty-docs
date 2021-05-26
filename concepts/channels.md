@@ -100,5 +100,51 @@ if (result.failed) {
 }
 ```
 
+## Getting channels
 
+You can get channels the current user can start **chat sessions** in.
+
+```javascript
+const result = await kitty.getChannels();
+
+if (result.succeeded) {
+  const channels = result.paginator.items; // Handle channels
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+### Getting joinable channels
+
+Get channels the current user can join, becoming a member, using the **joinable** flag.
+
+```javascript
+const result = await kitty.getChannels({ joinable: true });
+
+if (result.succeeded) {
+  const channels = result.paginator.items; // Handle channels
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+### Getting a channel
+
+Get a channel by searchable properties like channel ID
+
+```javascript
+const result = await kitty.getChannel(channelId);
+
+if (result.succeeded) {
+  const channel = result.channel; // Handle channel
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
 
