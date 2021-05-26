@@ -66,5 +66,3 @@ await kitty.updateCurrentUser((user) => {
 * [JavaScript SDK Reference Documentation](https://chatkitty.github.io/chatkitty-js/modules/user.html)
 * [Platform API OpenAPI Specification](https://swagger.chatkitty.com/#/user)
 
-
-
