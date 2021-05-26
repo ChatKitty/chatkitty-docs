@@ -6,11 +6,17 @@ description: >-
 
 # User Sessions
 
-## Starting a user session
-
 Before you can use the ChatKitty SDK, a user session must be **started**. Starting a user session creates a **concurrent connection** to ChatKitty belonging to a **user** throughout the duration of the user's usage of your application until the user session is **ended**. A user session is **active** from when it was started until it is ended by the user, or the session's underlying network connection is lost. Only one user session can be active at a time for a ChatKitty client instance.
 
-ChatKitty lets you integrate your application authentication logic to secure user sessions with no hassle. If you are in development mode or don't plan on implementing user authentication, you can also create user sessions without authenticating in **guest mode**. 
+ChatKitty lets you integrate your application authentication logic to secure user sessions with no hassle. If you are in development mode or don't plan on implementing user authentication, you can also create user sessions without authenticating in **guest mode**.
+
+## Properties
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| user | CurrentUser | The user this session was started for. | ✔ |
+
+## Starting a user session
 
 You start a user session using the unique **username** of a user and optionally authentication parameters to secure the user session.
 
