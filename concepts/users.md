@@ -14,7 +14,8 @@ A user represents an end-user using your application. Users can join channels, c
 | name | string | The unique name of the user. | ✔ |
 | displayName | string | Human readable name of this user. Shown to other users. | ✔ |
 | displayPictureUrl | string | URI for this user's display picture | ✔ |
-|  |  |  |  |
+| isGuest | boolean | True if this user was created by a guest user session | - |
+| properties | object | Custom data associatied with this user | ✔ |
 
 ## Current User
 
