@@ -12,6 +12,7 @@
 * [User Sessions](concepts/user-sessions.md)
 * [Users](concepts/users.md)
 * [Channels](concepts/channels.md)
+* [Chat Sessions](concepts/chat-sessions.md)
 
 ## JavaScript SDK
 
