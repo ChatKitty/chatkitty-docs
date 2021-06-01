@@ -58,6 +58,30 @@ You start a chat session using a channel object and optionally chat session even
 | onChannelUpdated | function | [Chat session event handler](chat-sessions.md#chat-session-event-handlers) function | - |
 | onMessageRead | function | [Chat session event handler](chat-sessions.md#chat-session-event-handlers) function | - |
 
+```javascript
+const result = kitty.startChatSession({
+  channel: channel, // Optional event handlers below...
+  onReceivedMessage: (message) => {
+    // handle received messages
+  },
+  onTypingStarted: (user) => {
+    // handle user starts typing
+  },
+  onTypingStopped: (user) => {
+    // handle user stops typing
+  }, //... and so on.
+});
+
+if (result.succeeded) {
+  const session = result.session; // Handle session
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+
+```
+
 {% hint style="warning" %}
 A [user session](user-sessions.md) must be active for the current user before starting a chat session
 {% endhint %}
