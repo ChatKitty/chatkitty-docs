@@ -117,7 +117,7 @@ if (result.failed) {
 
 Using the Platform API.
 
-{% api-method method="post" host="https://api.chatkitty.com/v1/applications/:appId" path="/channels/:id/messages" %}
+{% api-method method="post" host="" path="/channels/:id/messages" %}
 {% api-method-summary %}
 Create Channel System Message
 {% endapi-method-summary %}
