@@ -117,7 +117,7 @@ if (result.failed) {
 
 Using the Platform API.
 
-{% api-method method="post" host="channels/:id/messages" path="" %}
+{% api-method method="post" host="https://api.chatkitty.com/v1/applications/:appId/" path="/channels/:id/messages" %}
 {% api-method-summary %}
 Create Channel System Message
 {% endapi-method-summary %}
@@ -135,12 +135,12 @@ The ID for the channel this message belongs to
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="body" type="string" required=true %}
-The Unicode text body of this message
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="type" type="string" required=true %}
 Type of this message. Always `TEXT`
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="body" type="string" required=true %}
+The Unicode text body of this message
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
