@@ -12,7 +12,7 @@ A user device can start up to 10 chat sessions at a time.
 
 ## Chat session event handlers
 
-When starting a chat session, you can define **event handlers** to respond to chat events that occur while the chat session is active, as such when a new message is received, a user starts/stop typing, a user has entered or left the chat room, a user went offline, etc.
+When starting a chat session, you can define **event handlers** to respond to chat events that occur while the chat session is active, as such when a new **message** is received, a user starts/stop typing, a user has entered or left the chat room, a user went offline, etc.
 
 {% hint style="info" %}
 All chat session event handlers are optional, so you only needed to register handlers for chat events your application cares about.
@@ -80,6 +80,14 @@ if (result.failed) {
   const error = result.error; // Handle error
 }
 
+```
+
+## Ending a chat session
+
+If you no longer wish to participate in a channel's live chat and receive its events, you must end your chat session with the channel. After the last active chat session for a user in a channel is closed, certain chat events like new messages trigger **notifications**.
+
+```javascript
+session.end();
 ```
 
 {% hint style="warning" %}
