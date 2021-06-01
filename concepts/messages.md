@@ -75,7 +75,105 @@ if (result.failed) {
 
 ### Sending a user file message
 
-Using a client SDK, send a user file message
+Using a client SDK, send a user file message.
 
+#### Parameters
 
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| channel | Channel | Channel this message belongs to | ✔ |
+| file | File | File to upload as an attachment or ChatKitty external file properties | ✔ |
+| progressListener | UploadProgressListener | Listener to be notified as the file upload progresses. | - |
+
+```javascript
+const result = await kitty.sendMessage({
+  channel: channel,
+  file: file,
+  progressListener: {
+    onStarted: () => {
+      // Handle file upload started
+    },
+
+    onProgress: (progress) => {
+      // Handle file upload process
+    },
+
+    onCompleted: (result) => {
+      // Handle file upload completed
+    },
+  },
+});
+
+if (result.succeeded) {
+  const message = result.message; // Handle message
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+### Sending a system text message
+
+Using the Platform API.
+
+{% api-method method="post" host="channels/:id/messages" path="" %}
+{% api-method-summary %}
+Create Channel System Message
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Sends a new system text message.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="number" required=true %}
+The ID for the channel this message belongs to
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="body" type="string" required=true %}
+The Unicode text body of this message
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="type" type="string" required=true %}
+Type of this message. Always `TEXT`
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Returns a new message resource
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "id": 26858,
+  "type": "SYSTEM_TEXT",
+  "body": "Hello, world!",
+  "links": [],
+  "properties": {},
+  "createdTime": "2021-06-01T17:34:30.276Z",
+  "_links": {
+    "self": {
+      "href": "https://api.chatkitty.com/v1/applications/6902/messages/26858"
+    },
+    "channel": {
+      "href": "https://api.chatkitty.com/v1/applications/6902/channels/35204"
+    },
+    "application": {
+      "href": "https://api.chatkitty.com/v1/applications/6902"
+    }
+  }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
