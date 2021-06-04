@@ -113,7 +113,7 @@ if (result.failed) {
 }
 ```
 
-{% api-method method="post" host="https://api.chatkitty.com/v1/applications/:appId" path="/channels/:id/messages" %}
+{% api-method method="post" host="" path="/channels/:id/messages" %}
 {% api-method-summary %}
 Sending a system text message
 {% endapi-method-summary %}
@@ -180,4 +180,18 @@ You can retrieve previous messages and observe new messages.
 ###  Retrieving channel messages 
 
 A user can retrieve previous messages in a [channel](channels.md) he or she is a member of. 
+
+```javascript
+const result = await kitty.getMessages({
+  channel: channel,
+});
+
+if (result.succeeded) {
+  const messages = result.paginator.items; // Handle messages
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
 
