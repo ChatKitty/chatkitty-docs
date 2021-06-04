@@ -18,7 +18,7 @@ Before sending or receiving messages in real-time, a [chat session](chat-session
 | type | string | The type of this message. `TEXT`, or `FILE` | ✔ |
 | body | string | The text body of this message. Present if this is a text message | - |
 | file | ChatKittyFile | The file attached to this message. Present if this is a file message | - |
-| links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message  | - |
+| links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message | - |
 | user | User | The user who sent this message. Absent if this is a system message | - |
 | createdTime | datetime | ISO 8601 datetime when this message was created | ✔ |
 | properties | object | Custom data associated with this message | ✔ |
@@ -49,7 +49,7 @@ You can send messages in a [channel](channels.md).
 
 ### Sending a user text message
 
-Using a client SDK, send a user text message.
+Using a client SDK as a channel member, send a user text message.
 
 #### Parameters
 
@@ -113,17 +113,13 @@ if (result.failed) {
 }
 ```
 
-### Sending a system text message
-
-Using the Platform API.
-
 {% api-method method="post" host="" path="/channels/:id/messages" %}
 {% api-method-summary %}
-Create Channel System Message
+Sending a system text message
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sends a new system text message.
+Using the Platform API, send a new system text message.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -176,4 +172,12 @@ Returns a new message resource
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Getting messages
+
+You can retrieve previous messages and observe new messages.
+
+###  Retrieving channel messages 
+
+A user can retrieve previous messages in a [channel](channels.md) he or she is a member of. 
 
