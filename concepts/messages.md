@@ -4,11 +4,7 @@ description: 'Users, bots, and system administrators can send messages'
 
 # Messages
 
-Messages are the core building blocks of ChatKitty applications. Users send messages using the client SDK, while bots and system administrators can send messages using the Platform API. **Text messages** have a Unicode text body, while **file messages** have a file attached to them. **User messages** are messages sent by end-users of your application through the client SDK. **System messages** are messages sent via the **Platform API** on behalf of the application.
-
-{% hint style="info" %}
-Before sending or receiving messages in real-time, a [chat session](chat-sessions.md) must be [started](chat-sessions.md#starting-a-chat-session) for the channel the messages belong to.
-{% endhint %}
+Messages are the core building blocks of ChatKitty applications. Users send messages using the client SDK, while bots and system administrators can send messages using the Platform API. **Text messages** have a Unicode text body, while **file messages** have a file attached to them. **User messages** are messages sent by end-users of your application through the client SDK. **System messages** are messages sent via the [Platform API](../platform-api/overview.md) on behalf of the application.
 
 ## Properties
 
@@ -55,7 +51,7 @@ Using a client SDK as a channel member, send a user text message.
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| channel | Channel | Channel this message belongs to | ✔ |
+| channel | Channel | [Channel](channels.md) this message belongs to | ✔ |
 | body | string | The Unicode text body of this message | ✔ |
 
 ```javascript
@@ -81,7 +77,7 @@ Using a client SDK, send a user file message.
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| channel | Channel | Channel this message belongs to | ✔ |
+| channel | Channel | [Channel](channels.md) this message belongs to | ✔ |
 | file | File | File to upload as an attachment or ChatKitty external file properties | ✔ |
 | progressListener | UploadProgressListener | Listener to be notified as the file upload progresses. | - |
 
