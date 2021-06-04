@@ -191,3 +191,16 @@ if (result.failed) {
 }
 ```
 
+### Observing channel messages
+
+A user can observe new messages in a [channel](channels.md) he or she is a member of.
+
+```javascript
+kitty.startChatSession({
+  channel: channel,
+  onReceivedMessage: (message) => {
+    // Handle recevied message
+  },
+});
+```
+
