@@ -113,7 +113,7 @@ if (result.failed) {
 }
 ```
 
-{% api-method method="post" host="" path="/channels/:id/messages" %}
+{% api-method method="post" host="https://api.chatkitty.com/v1/applications/:appId" path="/channels/:id/messages" %}
 {% api-method-summary %}
 Sending a system text message
 {% endapi-method-summary %}
