@@ -129,6 +129,10 @@ The ID for the channel this message belongs to
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="properties" type="object" %}
+Custom data associated with this message
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="type" type="string" required=true %}
 Type of this message. Always `TEXT`
 {% endapi-method-parameter %}
