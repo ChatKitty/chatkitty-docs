@@ -53,6 +53,7 @@ Using a client SDK as a channel member, send a user text message.
 | :--- | :--- | :--- | :--- |
 | channel | Channel | [Channel](channels.md) this message belongs to | ✔ |
 | body | string | The Unicode text body of this message | ✔ |
+| properties | object | Custom data associated with this message | - |
 
 ```javascript
 const result = await kitty.sendMessage({
@@ -79,6 +80,7 @@ Using a client SDK, send a user file message.
 | :--- | :--- | :--- | :--- |
 | channel | Channel | [Channel](channels.md) this message belongs to | ✔ |
 | file | File | File to upload as an attachment or ChatKitty external file properties | ✔ |
+| properties | object | Custom data associated with this message | - |
 | progressListener | UploadProgressListener | Listener to be notified as the file upload progresses. | - |
 
 ```javascript

@@ -18,6 +18,7 @@ After a user **joins** a channel, the user becomes a **channel member**. ChatKit
 | type | string | The type of this channel. `DIRECT`, `PUBLIC`, or `PRIVATE` | ✔ |
 | name | string | The unique name of this channel | ✔ |
 | creator | User | The user who created this channel. Absent if the channel was created with the Platform API | - |
+| lastReceivedMessage | Message | The message that was last received in this channel | - |
 | properties | object | Custom data associated with this channel | ✔ |
 
 ## Channel types
