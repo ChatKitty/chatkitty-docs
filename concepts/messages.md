@@ -16,6 +16,28 @@ Messages are the core building blocks of ChatKitty applications. Users send mess
 | file | ChatKittyFile | The file attached to this message. Present if this is a file message | - |
 | links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message | - |
 | user | User | The user who sent this message. Absent if this is a system message | - |
+| createdTime | datetime | ISO 8601 date-time when this message was created | ✔ |
+| properties | object | Custom data associated with this message | ✔ |
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| id | number | 64-bit integer identifier associated with this message | ✔ |
+| type | string | The type of this message. `TEXT`, or `FILE` | ✔ |
+| body | string | The text body of this message. Present if this is a text message | - |
+| file | ChatKittyFile | The file attached to this message. Present if this is a file message | - |
+| links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message | - |
+| user | User | The user who sent this message. Absent if this is a system message | - |
+| createdTime | datetime | ISO 8601 datetime when this message was created | ✔ |
+| properties | object | Custom data associated with this message | ✔ |
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| id | number | 64-bit integer identifier associated with this message | ✔ |
+| type | string | The type of this message. `TEXT`, or `FILE` | ✔ |
+| body | string | The text body of this message. Present if this is a text message | - |
+| file | ChatKittyFile | The file attached to this message. Present if this is a file message | - |
+| links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message | - |
+| user | User | The user who sent this message. Absent if this is a system message | - |
 | createdTime | datetime | ISO 8601 datetime when this message was created | ✔ |
 | properties | object | Custom data associated with this message | ✔ |
 
@@ -127,22 +149,7 @@ Using the Platform API, send a new system text message.
 The ID for the channel this message belongs to
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
-
-{% api-method-parameter name="type" type="string" required=true %}
-Type of this message. Always `TEXT`
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="body" type="string" required=true %}
-The Unicode text body of this message
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties" type="object" %}
-Custom data associated with this message
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
-{% api-method-body-parameters %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -180,9 +187,9 @@ Returns a new message resource
 
 You can retrieve previous messages and observe new messages.
 
-###  Retrieving channel messages 
+### Retrieving channel messages
 
-A user can retrieve previous messages in a [channel](channels.md) he or she is a member of. 
+A user can retrieve previous messages in a [channel](channels.md) he or she is a member of.
 
 ```javascript
 const result = await kitty.getMessages({

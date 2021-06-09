@@ -14,6 +14,7 @@
 * [Channels](concepts/channels.md)
 * [Chat Sessions](concepts/chat-sessions.md)
 * [Messages](concepts/messages.md)
+* [Notifications](concepts/notifications.md)
 
 ## JavaScript SDK
 
