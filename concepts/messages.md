@@ -135,13 +135,14 @@ Type of this message. Always `TEXT`
 {% api-method-parameter name="body" type="string" required=true %}
 The Unicode text body of this message
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="properties" type="object" %}
+Custom data associated with this message
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="properties" type="object" %}
-Custom data associated with this message
-{% endapi-method-parameter %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
