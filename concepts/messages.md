@@ -127,6 +127,20 @@ Using the Platform API, send a new system text message.
 The ID for the channel this message belongs to
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="type" type="string" required=true %}
+Type of this message. Always `TEXT`
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="body" type="string" required=true %}
+The Unicode text body of this message
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="properties" type="object" %}
+Custom data associated with this message
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
