@@ -49,7 +49,7 @@ You can use ChatKitty across every major browser and device platform. ChatKitty 
 
 ChatKitty provides a client JavaScript SDK and Platform API for you to interact with your ChatKitty application.
 
-[The JavaScript client library](https://docs.chatkitty.com/javascript/) provides an asynchronous real-time messaging interface to ChatKitty's user-side functionality. [The Platform API](https://docs.chatkitty.com/platform/) provides a RESTful HTTP interface for you to manage and control your application server-side.
+[The JavaScript client library](getting-started/javascript-real-time-messaging-quick-start.md) provides an asynchronous real-time messaging interface to ChatKitty's user-side functionality. [The Platform API](https://swagger.chatkitty.com/) provides a RESTful HTTP interface for you to manage and control your application server-side.
 
 ## Client SDK
 
@@ -57,8 +57,8 @@ ChatKitty provides a JavaScript client SDK to integrate chat into your front-end
 
 We've provided the following resources to help you implement chat with the ChatKitty JavaScript SDK.
 
-* [SDK Documentation](https://github.com/ChatKitty/chatkitty-docs/tree/be543b923d479d8eb913c90142eb58295b7009fd/javascript/README.md)
-* [SDK TSDoc Reference Documentation](https://chatkitty.github.io/chatkitty-js/)
+* [SDK Documentation](getting-started/javascript-real-time-messaging-quick-start.md)
+* [SDK TSDoc Reference Documentation](https://chatkitty.github.io/chatkitty-js/classes/chatkitty.chatkitty-1.html)
 * [Guides And Tutorials](https://www.chatkitty.com/guides/)
 
 ## Platform API
@@ -67,7 +67,9 @@ The Platform API provides a RESTful interface for administrators and server-side
 
 We've provided the following resources to help you manage your application with the ChatKitty Platform API.
 
-* [SDK Documentation](https://github.com/ChatKitty/chatkitty-docs/tree/be543b923d479d8eb913c90142eb58295b7009fd/javascript/README.md)
-* [Open API Reference Documentation And API Explorer](https://docs.chatkitty.com/platform/v1/)
+* [SDK Documentation](https://chatkitty.github.io/chatkitty-api-docs/platform/#introduction)
+* [Open API Reference Documentation And API Explorer](https://swagger.chatkitty.com/)
 * [HAL API Browser](https://api.chatkitty.com/v1/explorer/index.html)
+
+
 
