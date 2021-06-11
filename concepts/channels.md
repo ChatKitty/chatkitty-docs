@@ -103,7 +103,7 @@ if (result.failed) {
 
 ## Getting channels
 
-You can get channels the current user can start **chat sessions** in.
+Get all channels accessible to the current user regardless of current membership status.
 
 ```javascript
 const result = await kitty.getChannels();
@@ -117,12 +117,28 @@ if (result.failed) {
 }
 ```
 
-### Getting joinable channels
+### Getting joined channels
 
-Get channels the current user can join, becoming a member, using the **joinable** flag.
+Get channels the current user has joined \(is already a member\) and can start **chat sessions** in.
 
 ```javascript
-const result = await kitty.getChannels({ joinable: true });
+const result = await kitty.getChannels({ filter: { joined: true } });
+
+if (result.succeeded) {
+  const channels = result.paginator.items; // Handle channels
+}
+
+if (result.failed) {
+  const error = result.error; // Handle error
+}
+```
+
+### Getting joinable channels
+
+Get channels the current user can join, becoming a member.
+
+```javascript
+const result = await kitty.getChannels({ filter: { joined: false } });
 
 if (result.succeeded) {
   const channels = result.paginator.items; // Handle channels
