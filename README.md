@@ -67,9 +67,6 @@ The Platform API provides a RESTful interface for administrators and server-side
 
 We've provided the following resources to help you manage your application with the ChatKitty Platform API.
 
-* [SDK Documentation](https://chatkitty.github.io/chatkitty-api-docs/platform/#introduction)
+* [SDK Documentation](platform-api/overview.md)
 * [Open API Reference Documentation And API Explorer](https://swagger.chatkitty.com/)
-* [HAL API Browser](https://api.chatkitty.com/v1/explorer/index.html)
-
-
 
