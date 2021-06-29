@@ -15,6 +15,7 @@
 * [Chat Sessions](concepts/chat-sessions.md)
 * [Messages](concepts/messages.md)
 * [Notifications](concepts/notifications.md)
+* [Mentions](concepts/mentions.md)
 
 ## JavaScript SDK
 

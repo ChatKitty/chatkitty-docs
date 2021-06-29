@@ -15,6 +15,7 @@ Messages are the core building blocks of ChatKitty applications. Users send mess
 | body | string | The text body of this message. Present if this is a text message | - |
 | file | ChatKittyFile | The file attached to this message. Present if this is a file message | - |
 | links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message | - |
+| mentions | Mention \[ \] | [Mentions](mentions.md) of channels and users in this message. Present if this is a text message | - |
 | user | User | The user who sent this message. Absent if this is a system message | - |
 | createdTime | datetime | ISO 8601 date-time when this message was created | ✔ |
 | properties | object | Custom data associated with this message | ✔ |
