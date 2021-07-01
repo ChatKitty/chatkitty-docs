@@ -6,6 +6,7 @@
 
 * [Setting up a ChatKitty project](getting-started/setting-up-project.md)
 * [JavaScript Real-Time Messaging Quick Start](getting-started/javascript-real-time-messaging-quick-start.md)
+* [ChatKitty Community Forum](https://community.chatkitty.com/)
 
 ## Concepts
 
