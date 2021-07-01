@@ -57,8 +57,8 @@ ChatKitty provides a JavaScript client SDK to integrate chat into your front-end
 
 We've provided the following resources to help you implement chat with the ChatKitty JavaScript SDK.
 
-* [SDK Documentation](getting-started/javascript-real-time-messaging-quick-start.md)
-* [SDK TSDoc Reference Documentation](https://chatkitty.github.io/chatkitty-js/classes/chatkitty.chatkitty-1.html)
+* [Getting Started with the ChatKitty JavaScript SDK](getting-started/javascript-real-time-messaging-quick-start.md)
+* [SDK Reference Documentation](https://chatkitty.github.io/chatkitty-js/classes/chatkitty.chatkitty-1.html)
 * [Guides And Tutorials](https://www.chatkitty.com/guides/)
 
 ## Platform API
@@ -67,6 +67,6 @@ The Platform API provides a RESTful interface for administrators and server-side
 
 We've provided the following resources to help you manage your application with the ChatKitty Platform API.
 
-* [SDK Documentation](platform-api/overview.md)
+* [Platform API Overview](platform-api/overview.md)
 * [Open API Reference Documentation And API Explorer](https://swagger.chatkitty.com/)
 
