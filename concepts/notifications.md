@@ -4,7 +4,7 @@ description: Notifications inform your users when events occur across your appli
 
 # Notifications
 
-Notifications inform users of actions that occurred in a context different from their current context. ChatKitty sends notifications to your app through the ChatKitty JavaScript SDK when an action outside of an active chat session occurs. You can observe these notifications and use them to build in-app notification views. ChatKitty also sends notifications to [chat functions](../platform-api/chat-functions.md) that can be used to trigger push notifications.
+Notifications inform users of actions that occurred in a context different from their current context. ChatKitty sends notifications to your app through the ChatKitty JavaScript SDK when an action outside of an active chat session occurs. You can observe these notifications and use them to build in-app notification views. ChatKitty also sends notifications to [chat functions](../chat-functions/overview.md) that can be used to trigger push notifications.
 
 ## Properties
 

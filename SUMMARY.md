@@ -28,8 +28,11 @@
 * [Authentication](platform-api/authentication.md)
 * [Pagination](platform-api/pagination.md)
 * [Files](platform-api/files.md)
-* [Chat Functions](platform-api/chat-functions.md)
 * [OpenAPI Specification \(OAS\)](https://swagger.chatkitty.com/)
+
+## Chat Functions
+
+* [Overview](chat-functions/overview.md)
 
 ## Guides
 
