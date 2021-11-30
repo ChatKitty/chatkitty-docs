@@ -132,7 +132,7 @@ const Snippet = () => {
 {% endtab %}
 {% endtabs %}
 
-## Display MediaStreams
+## Displaying Media Streams
 
 To display a `MediaStream` (local or remote), use the React Native WebRTC `RTCView` component.
 
@@ -379,7 +379,7 @@ kitty.Calls.onCallEnded((call: Call) => {
 {% endtab %}
 {% endtabs %}
 
-## Start a call
+## Starting a call
 
 Start a direct call with another user.
 
@@ -387,7 +387,7 @@ Start a direct call with another user.
 await kitty.Calls.startCall({ members: [{ username: 'john@chatkitty.com' }] });
 ```
 
-## Accept a call
+## Accepting a call
 
 Accept a call invite.
 
@@ -395,7 +395,7 @@ Accept a call invite.
 await kitty.Calls.acceptCall({ call });
 ```
 
-## Reject a call
+## Rejecting a call
 
 Reject a call invite.
 
@@ -403,7 +403,7 @@ Reject a call invite.
 await kitty.Calls.rejectCall({ call });
 ```
 
-## Leave an active call
+## Leaving an active call
 
 Leave the currently active call. Ends a one-to-one direct call.
 
@@ -411,7 +411,7 @@ Leave the currently active call. Ends a one-to-one direct call.
 kitty.Calls.leaveCall();
 ```
 
-## Switch camera
+## Switching camera
 
 Switches the current user's camera if their device has multiple cameras (front and back).
 
@@ -419,7 +419,7 @@ Switches the current user's camera if their device has multiple cameras (front a
 kitty.Calls.switchCamera();
 ```
 
-## Toggle mute
+## Toggling mute
 
 Mutes/unmutes the current user's audio stream
 
@@ -427,7 +427,25 @@ Mutes/unmutes the current user's audio stream
 kitty.Calls.toggleMute();
 ```
 
-## Retrieve calls
+## Retrieving active call mute state
+
+Retrieve the active call's mute state using `ChatKitty.Calls.isMuted`.
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const muted = kitty.Calls.isMuted;
+```
+{% endtab %}
+
+{% tab title="TypeScript" %}
+```typescript
+const muted: boolean = kitty.Calls.isMuted;
+```
+{% endtab %}
+{% endtabs %}
+
+## Retrieving calls
 
 Retrieve past calls.
 
@@ -465,7 +483,29 @@ if (succeeded<GetCallsSucceededResult>(result)) {
 {% endtab %}
 {% endtabs %}
 
-## Retrieve a call
+## Retrieving a call
+
+### Retrieving active call
+
+Retrieve an active call if the currrent user has started or accepted the call using `ChatKitty.Calls.activeCall`
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const call = kitty.Calls.activeCall;
+```
+{% endtab %}
+
+{% tab title="TypeScript" %}
+```typescript
+import { Call } from 'react-native-chatkitty';
+
+const call: Call | null = kitty.Calls.activeCall;
+```
+{% endtab %}
+{% endtabs %}
+
+### Retrieving a call by ID
 
 Retrieve a call with its ID.
 
@@ -497,7 +537,7 @@ if (succeeded<GetCallSucceededResult>(result)) {
 {% endtab %}
 {% endtabs %}
 
-## Close the React Native Calls SDK context
+## Closing the React Native Calls SDK context
 
 Close the ChatKitty React Native Calls SDK and clean up associated system resources
 
