@@ -92,7 +92,7 @@ await kitty.Calls.initialize({
 
 After calling `initialize(...)`, the `ChatKitty.Calls` object creates a WebRTC MediaSteam for your device's camera and is ready to start and answer calls.
 
-## Retrieving the local MediaStream
+## Retrieving the local Media Stream
 
 `kitty.Calls.localStream` exposes the React Native WebRTC MediaStream capturing video/audio from your device.
 
