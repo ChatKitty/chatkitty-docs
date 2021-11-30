@@ -1,5 +1,5 @@
 ---
-description: 'Users, bots, and system administrators can send messages'
+description: Users, bots, and system administrators can send messages
 ---
 
 # Messages
@@ -8,17 +8,17 @@ Messages are the core building blocks of ChatKitty applications. Users send mess
 
 ## Properties
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| id | number | 64-bit integer identifier associated with this message | ✔ |
-| type | string | The type of this message. `TEXT`, or `FILE` | ✔ |
-| body | string | The text body of this message. Present if this is a text message | - |
-| file | ChatKittyFile | The file attached to this message. Present if this is a file message | - |
-| links | MessageLink \[ \] | **Message links** found in this message. Present if this is a text message | - |
-| mentions | Mention \[ \] | [Mentions](mentions.md) of channels and users in this message. Present if this is a text message | - |
-| user | User | The user who sent this message. Absent if this is a system message | - |
-| createdTime | datetime | ISO 8601 date-time when this message was created | ✔ |
-| properties | object | Custom data associated with this message | ✔ |
+| Name        | Type             | Description                                                                                      | Required |
+| ----------- | ---------------- | ------------------------------------------------------------------------------------------------ | -------- |
+| id          | number           | 64-bit integer identifier associated with this message                                           | ✔        |
+| type        | string           | The type of this message. `TEXT`, or `FILE`                                                      | ✔        |
+| body        | string           | The text body of this message. Present if this is a text message                                 | -        |
+| file        | ChatKittyFile    | The file attached to this message. Present if this is a file message                             | -        |
+| links       | MessageLink \[ ] | **Message links** found in this message. Present if this is a text message                       | -        |
+| mentions    | Mention \[ ]     | [Mentions](mentions.md) of channels and users in this message. Present if this is a text message | -        |
+| user        | User             | The user who sent this message. Absent if this is a system message                               | -        |
+| createdTime | datetime         | ISO 8601 date-time when this message was created                                                 | ✔        |
+| properties  | object           | Custom data associated with this message                                                         | ✔        |
 
 ## Message types
 
@@ -50,11 +50,11 @@ Using a client SDK as a channel member, send a user text message.
 
 #### Parameters
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| channel | Channel | [Channel](channels.md) this message belongs to | ✔ |
-| body | string | The Unicode text body of this message | ✔ |
-| properties | object | Custom data associated with this message | - |
+| Name       | Type    | Description                                    | Required |
+| ---------- | ------- | ---------------------------------------------- | -------- |
+| channel    | Channel | [Channel](channels.md) this message belongs to | ✔        |
+| body       | string  | The Unicode text body of this message          | ✔        |
+| properties | object  | Custom data associated with this message       | -        |
 
 ```javascript
 const result = await kitty.sendMessage({
@@ -77,12 +77,12 @@ Using a client SDK, send a user file message.
 
 #### Parameters
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| channel | Channel | [Channel](channels.md) this message belongs to | ✔ |
-| file | File | File to upload as an attachment or ChatKitty external file properties | ✔ |
-| properties | object | Custom data associated with this message | - |
-| progressListener | UploadProgressListener | Listener to be notified as the file upload progresses. | - |
+| Name             | Type                   | Description                                                           | Required |
+| ---------------- | ---------------------- | --------------------------------------------------------------------- | -------- |
+| channel          | Channel                | [Channel](channels.md) this message belongs to                        | ✔        |
+| file             | File                   | File to upload as an attachment or ChatKitty external file properties | ✔        |
+| properties       | object                 | Custom data associated with this message                              | -        |
+| progressListener | UploadProgressListener | Listener to be notified as the file upload progresses.                | -        |
 
 ```javascript
 const result = await kitty.sendMessage({
@@ -112,44 +112,30 @@ if (result.failed) {
 }
 ```
 
-{% api-method method="post" host="" path="/channels/:id/messages" %}
-{% api-method-summary %}
-Sending a system text message
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger path="/channels/:id/messages" method="post" summary="Sending a system text message" %}
+{% swagger-description %}
 Using the Platform API, send a new system text message.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="number" required=true %}
+{% swagger-parameter name="id" type="number" in="path" %}
 The ID for the channel this message belongs to
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="type" type="string" required=true %}
-Type of this message. Always `TEXT`
-{% endapi-method-parameter %}
+{% swagger-parameter name="type" type="string" in="body" %}
+Type of this message. Always 
 
-{% api-method-parameter name="body" type="string" required=true %}
+`TEXT`
+{% endswagger-parameter %}
+
+{% swagger-parameter name="body" type="string" in="body" %}
 The Unicode text body of this message
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="properties" type="object" %}
+{% swagger-parameter name="properties" type="object" in="body" %}
 Custom data associated with this message
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns a new message resource
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": 26858,
@@ -171,10 +157,8 @@ Returns a new message resource
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Getting messages
 
@@ -210,4 +194,3 @@ kitty.startChatSession({
   },
 });
 ```
-

@@ -31,7 +31,7 @@ ChatKitty is the first complete chat platform; bringing together everything that
 * **Delivery and read receipts:** See when messages get delivered and read.
 * **Link preview generation:** Messages with links get rich media previews.
 
-![This example was created with ChatKitty.](.gitbook/assets/screenshot-chatkitty-demo-app.png)
+![This example was created with ChatKitty.](<.gitbook/assets/screenshot-chatkitty-demo-app (1).png>)
 
 With ChatKitty you can build real-time chat with or without a back-end. Getting started with ChatKitty is easy and you get:
 
@@ -49,7 +49,7 @@ You can use ChatKitty across every major browser and device platform. ChatKitty 
 
 ChatKitty provides a client JavaScript SDK and Platform API for you to interact with your ChatKitty application.
 
-[The JavaScript client library](getting-started/javascript-real-time-messaging-quick-start.md) provides an asynchronous real-time messaging interface to ChatKitty's user-side functionality. [The Platform API](https://swagger.chatkitty.com/) provides a RESTful HTTP interface for you to manage and control your application server-side.
+[The JavaScript client library](getting-started/javascript-real-time-messaging-quick-start.md) provides an asynchronous real-time messaging interface to ChatKitty's user-side functionality. [The Platform API](https://swagger.chatkitty.com) provides a RESTful HTTP interface for you to manage and control your application server-side.
 
 ## Client SDK
 
@@ -68,5 +68,4 @@ The Platform API provides a RESTful interface for administrators and server-side
 We've provided the following resources to help you manage your application with the ChatKitty Platform API.
 
 * [Platform API Overview](platform-api/overview.md)
-* [Open API Reference Documentation And API Explorer](https://swagger.chatkitty.com/)
-
+* [Open API Reference Documentation And API Explorer](https://swagger.chatkitty.com)
