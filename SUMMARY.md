@@ -9,6 +9,10 @@
 * [React Native Video/Voice Calls Quick Start](getting-started/react-native-video-voice-calls-quick-start.md)
 * [ChatKitty Community Forum](https://community.chatkitty.com)
 
+***
+
+* [Applications](applications.md)
+
 ## Concepts
 
 * [Channels](concepts/channels.md)
